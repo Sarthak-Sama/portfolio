@@ -1,0 +1,179 @@
+[
+  {
+    "category": "Frontend",
+    "projects": [
+      {
+        "id": 1234,
+        "name": "Uncommon Studio",
+        "desc": "Landing Page",
+        "techs": ["HTML&CSS", "JS", "GSAP", "ScrollTrigger"],
+        "url": "https://uncommon-studio.vercel.app/",
+        "imageSrc": "/projectThumbnails/frontend/UncommonSS.png"
+      },
+      {
+        "id": 5678,
+        "name": "Makro Studio",
+        "desc": "Landing Page",
+        "techs": ["HTML&CSS", "JS", "GSAP", "ScrollTrigger"],
+        "url": "",
+        "imageSrc": "/projectThumbnails/frontend/MakroSS.png"
+      },
+      {
+        "id": 9101,
+        "name": "SakuraDB",
+        "desc": "React Database App using Redux",
+        "techs": ["React", "Redux", "API"],
+        "imageSrc": "/projectThumbnails/frontend/SakuraDBss.png"
+      },
+      {
+        "id": 1121,
+        "name": "Evento",
+        "desc": "Event Tracking React app using Context API",
+        "techs": ["React", "Context API"],
+        "imageSrc": "/projectThumbnails/frontend/CalendarApp.png"
+      },
+      {
+        "id": 3141,
+        "name": "WeThinkElastic",
+        "desc": "Landing Page",
+        "techs": ["HTML&CSS", "JS", "GSAP", "ScrollTrigger"],
+        "url": "",
+        "imageSrc": "/projectThumbnails/frontend/WeThinkElasticSS.png"
+      }
+    ]
+  },
+  {
+    "category": "Fullstack",
+    "projects": [
+      {
+        "id": 5161,
+        "name": "Code Hours",
+        "desc": "Get Tracked  Stay Cracked",
+        "url": "https://uncommon-studio.vercel.app/",
+        "imageSrc": "/projectThumbnails/fullstack/codehours.png",
+        "secondaryImages": [
+          "/projectThumbnails/fullstack/secondaryImages/codehours2.png",
+          "/projectThumbnails/fullstack/secondaryImages/codehours3.png"
+        ],
+        "techs": [
+          "React",
+          "Express",
+          "Node.js",
+          "MongoDB",
+          "VS Code Extension Development",
+          "CLERK Auth",
+          "CDN Devlopment",
+          "Redux"
+        ],
+        "features": [
+          "Code Time Tracking",
+          "Leaderboard",
+          "Coding Statisitcs",
+          "Widget that you can integrate in your websites"
+        ],
+        "idea": "I wanted to create a platform where developers can track their coding hours and compete with other developers. I also wanted to create a widget that can be integrated in any website to show the coding time and activity of the developer.",
+        "challenges": [
+          "Thinking of a way to track the coding time of the user and keep track on the the daily time in IST timezone while using the UTC time zone because that is what MONGODB and JS stores time in by default.",
+          "I first thought of sending a time document to the server with every log request but that would be too much data and would be a lot of work for the server to handle. There instead of tracking the coding time of last 24 hours, I decieded to reset daily time at 12:00 AM IST",
+          "I had to learn how to create a VS Code Extension",
+          "I had to learn how to create a CDN widget that can be integrated in any website"
+        ]
+      },
+      {
+        "id": 9202,
+        "name": "CloakCampus",
+        "desc": "A social media for University Students",
+        "techs": [
+          "React",
+          "Express",
+          "Node.js",
+          "MongoDB",
+          "PWA Development",
+          "GEMINI API",
+          "Redis",
+          "JWT",
+          "Multer",
+          "Cloudinary",
+          "Email Verification",
+          "Redux"
+        ],
+        "url": "",
+        "imageSrc": "/projectThumbnails/fullstack/cloakcampus.png",
+        "secondaryImages": [
+          "/projectThumbnails/fullstack/secondaryImages/cloakcampus2.png",
+          "/projectThumbnails/fullstack/secondaryImages/cloakcampus3.png"
+        ],
+        "features": [
+          "Completly Anonymouse Social media for university students where they can interact with their peers and express their critical opinions without any fear of being judged.",
+          "Username and Profile pictures gets randomly generated and assigned to the user with each login to keep the user completly anonymous",
+          "Content Moderation using GEMINI API",
+          "Email Verification is required to create an account to make sure only students from whitelisted universities with valid university email can join the platform",
+          "All the features like posting, commenting, liking, notification etc. are available",
+          "Admin Panel is also available to blacklist the suspicious users and delete inappropriate posts based on the Reports made by the users.",
+          "Images can be rotated before posting"
+        ],
+        "idea": "I wanted to create a platform where university students can interact with their peers and express their critical opinions, confess and have a community without any fear of being judged. Though it sounds like reddit or some another social media platform, the main USP is the simplicity of the app and that only your college mates can see your posts.",
+        "challenges": [
+          "I had to learn how to create a PWA because a webapp would have a high churn rate which I wanted to avoid.",
+          "Initially I also had video and audio posting feature but I had to remove it because it was taking too much space and memory on the server.",
+          "I had to learn how to store cache on Redis",
+          "I had to learn how to create a JWT token",
+          "I had to learn how to create a Multer middleware to upload images",
+          "I had to learn how to store media on Cloudinary"
+        ]
+      },
+      {
+        "id": 1223,
+        "name": "Yomimori",
+        "desc": "AI based Japanese reading and learning app",
+        "techs": [
+          "React",
+          "Express",
+          "Node.js",
+          "MongoDB",
+          "GEMINI API",
+          "CLERK Auth",
+          "Context API"
+        ],
+        "url": "",
+        "imageSrc": "/projectThumbnails/fullstack/yomimori.png",
+        "secondaryImages": [
+          "/projectThumbnails/fullstack/secondaryImages/yomimori2.png",
+          "/projectThumbnails/fullstack/secondaryImages/yomimori3.png"
+        ],
+        "features": [
+          "User can create stories and articles tailored to their proficency level and interested genres using AI",
+          "User can execc to Dictionary in realtime by clicking on any word in the article",
+          "Admin can also create stories and articles for the users as 'Archived Content'.",
+          "More features like flashcards, quizzes, etc. are coming soon."
+        ],
+        "idea": "I wanted to create a platform where people can read and learn Japanese in a fun and interactive way. I also wanted to create a platform where people can create their own stories and articles and share it with the community.",
+        "challenges": [
+          "I had to learn how to fetch a dictionary to my database through an XML file using scripts.",
+          "I had to learn how to integrate GEMINI API"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Extra",
+    "projects": [
+      {
+        "id": 3242,
+        "name": "NSFW Detector",
+        "desc": "A NSFW detector API (prompt engineered)",
+        "techs": ["Javascript", "tensorflow", "NSFW.js", "Express"],
+        "url": "https://uncommon-studio.vercel.app/",
+        "imageSrc": "/projectThumbnails/frontend/UncommonSS.png"
+      },
+      {
+        "id": 1223,
+        "name": "EZhom",
+        "desc": "A-Z Homeservice provider",
+        "techs": ["Jinja", "Flask", "SQLite", "HTTM & CSS"],
+        "url": "",
+        "imageSrc": "/projectThumbnails/frontend/WeThinkElasticSS.png"
+      }
+    ]
+  }
+]

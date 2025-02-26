@@ -1,0 +1,6 @@
+{
+  "frontend": ["React", "JavaScript", "HTML/CSS", "Tailwind", "Jinja"],
+  "backend": ["Nodejs", "Express", "Flask", "MongoDB", "SQL"],
+  "tools": ["Git", "Linux"],
+  "languages": ["Japanese", "English", "French", "Hindi"]
+}
