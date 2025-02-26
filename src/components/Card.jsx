@@ -48,7 +48,7 @@ const Card = ({
     if (isMobile) {
       // For mobile: center horizontally
       return {
-        x: window.innerWidth / 2 - 205, // card width ~18rem (~288px)
+        x: window.innerWidth / 2 - 144, // card width ~18rem (~288px)
         y: window.innerHeight * 0.2,
       };
     } else {
@@ -103,7 +103,7 @@ const Card = ({
     }
   }, [visibleSide, centerPosition, position, originalPosition]);
 
-  // (Optional) Adjust opacity during drag for a little extra polish
+  // (Optional) Adjust opacity during drag for extra polish
   const opacityTransform = useTransform(
     cardXCor,
     [-144, 0, 144],
@@ -120,17 +120,19 @@ const Card = ({
     if (projectData.category === "Extra" && computedZIndex === -1) {
       setOpenState("");
     }
-  }, [computedZIndex]);
+  }, [computedZIndex, projectData.category, setOpenState]);
+
   return (
     <motion.div
       className="absolute w-[18rem] aspect-[3/4]"
       style={{
         perspective: "1000px",
         zIndex: computedZIndex,
-        x: cardXCor,
+        // On desktop, use the motion value; on mobile, let animate control x.
+        ...(!isMobile && { x: cardXCor }),
         opacity: !isMobile || visibleSide !== "front" ? 1 : opacityTransform,
       }}
-      // Enable horizontal drag only on mobile
+      // Enable horizontal drag only on mobile and when front side is visible
       drag={!isMobile || visibleSide !== "front" ? false : "x"}
       dragConstraints={{ left: 0, right: 0 }}
       onDragEnd={(event, info) => {
@@ -148,12 +150,12 @@ const Card = ({
       }}
       initial={{
         y: window.innerHeight + 100,
-        x: isMobile ? window.innerWidth / 2 - 205 : window.innerWidth / 2 - 144,
+        x: window.innerWidth / 2 - 144,
         rotateZ: 0,
         scale: 0.8,
       }}
       animate={{
-        x: isMobile ? window.innerWidth / 2 - 205 : position.x,
+        x: isMobile ? window.innerWidth / 2 - 144 : position.x,
         y: position.y,
         rotateZ: isSelected ? 0 : index % 2 === 0 ? -2 : 2,
         scale: isSelected ? 1.1 : 1,

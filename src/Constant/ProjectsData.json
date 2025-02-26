@@ -168,7 +168,7 @@
       },
       {
         "id": 1223,
-        "name": "EZhom",
+        "name": "AtoZ Home Services",
         "desc": "A-Z Homeservice provider",
         "techs": ["Jinja", "Flask", "SQLite", "HTTM & CSS"],
         "url": "",

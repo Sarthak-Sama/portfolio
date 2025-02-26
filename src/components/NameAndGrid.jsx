@@ -45,45 +45,49 @@ function NameAndGrid({ openState }) {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
-        className="mt-[200vh] relative grid grid-cols-2 sm:grid-cols-3 gap-6 text-left"
+        className="mt-[200vh]"
       >
-        <div className="absolute left-1/2 -translate-x-1/2 top-[75%] -translate-y-1/2 w-[70vw] h-[50vw] rounded-full bg-black z-[0] blur-[20rem]" />
-        {Object.entries(skills).map(([category, skillList]) => (
-          <div
-            key={category}
-            className="backdrop-blur-lg bg-white/5 p-6 rounded-xl"
-          >
-            <h3 className="text-2xl text-white font-bold mb-4 capitalize">
-              {category}
-            </h3>
-            <ul className="space-y-2">
-              {skillList.map((skill) => (
-                <li key={skill} className="text-zinc-300">
-                  {skill}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-
-        <div className="col-span-2 backdrop-blur-lg bg-white/5 p-6 rounded-xl">
-          <h3 className="text-2xl font-bold mb-4 text-white">Education</h3>
-          <div className="space-y-4">
-            <div>
-              <p className="text-lg sm:text-xl text-white">
-                BSc Data Science and Programming
-              </p>
-              <p className="text-zinc-400 font-['kollektif']! font-bold">
-                IIT Madras
-              </p>
-              <p className="text-zinc-500 font-['kollektif']!">2023 - 2026</p>
+        <div className="black-scrollbar relative grid grid-cols-2 sm:grid-cols-3 gap-6 text-left w-[90%] h-[70%] overflow-y-auto mx-auto sm:w-full sm:h-full mt-[20vh]">
+          <div className="absolute left-1/2 -translate-x-1/2 top-[75%] -translate-y-1/2 w-[70vw] h-[50vw] rounded-full bg-black z-[0] blur-[20rem]" />
+          {Object.entries(skills).map(([category, skillList]) => (
+            <div
+              key={category}
+              className="backdrop-blur-lg bg-white/5 p-6 rounded-xl"
+            >
+              <h3 className="text-2xl text-white font-bold mb-4 capitalize">
+                {category}
+              </h3>
+              <ul className="space-y-2">
+                {skillList.map((skill) => (
+                  <li key={skill} className="text-zinc-300">
+                    {skill}
+                  </li>
+                ))}
+              </ul>
             </div>
-            <div>
-              <p className="text-lg sm:text-xl text-white">
-                BA Japanese Langauge and Literature
-              </p>
-              <p className="text-zinc-400 font-['kollektif']! font-bold">JNU</p>
-              <p className="text-zinc-500 font-['kollektif']!">2023 - 2026</p>
+          ))}
+
+          <div className="col-span-2 backdrop-blur-lg bg-white/5 p-6 rounded-xl">
+            <h3 className="text-2xl font-bold mb-4 text-white">Education</h3>
+            <div className="space-y-4">
+              <div>
+                <p className="text-lg sm:text-xl text-white">
+                  BSc Data Science and Programming
+                </p>
+                <p className="text-zinc-400 font-['kollektif']! font-bold">
+                  IIT Madras
+                </p>
+                <p className="text-zinc-500 font-['kollektif']!">2023 - 2026</p>
+              </div>
+              <div>
+                <p className="text-lg sm:text-xl text-white">
+                  BA Japanese Langauge and Literature
+                </p>
+                <p className="text-zinc-400 font-['kollektif']! font-bold">
+                  JNU
+                </p>
+                <p className="text-zinc-500 font-['kollektif']!">2023 - 2026</p>
+              </div>
             </div>
           </div>
         </div>

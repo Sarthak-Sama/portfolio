@@ -56,7 +56,7 @@ const ProjectDets = () => {
   const imagesArray = [projectData.imageSrc, ...projectData.secondaryImages];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   return (
-    <div className="black-navbar bg-black overflow-y-auto">
+    <div className="black-scrollbar bg-black overflow-y-auto">
       {projectData ? (
         <div
           id="project-container"
@@ -167,7 +167,7 @@ const ProjectDets = () => {
 
           {/* Right Section */}
           <motion.div
-            className="black-navbar h-full min-h-[40vh] text-[#EDEDED] overflow-y-auto"
+            className="black-scrollbar h-full min-h-[40vh] text-[#EDEDED] overflow-y-auto"
             animate={{
               width: isMediumOrLarger ? `${100 - leftWidth}%` : "100%",
             }}
