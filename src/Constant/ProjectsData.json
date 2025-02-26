@@ -15,7 +15,7 @@
         "name": "Makro Studio",
         "desc": "Landing Page",
         "techs": ["HTML&CSS", "JS", "GSAP", "ScrollTrigger"],
-        "url": "",
+        "url": "https://makro-six.vercel.app/",
         "imageSrc": "/projectThumbnails/frontend/MakroSS.png"
       },
       {
@@ -23,6 +23,7 @@
         "name": "SakuraDB",
         "desc": "React Database App using Redux",
         "techs": ["React", "Redux", "API"],
+        "url": "https://sakura-db-webapp-react-project1.vercel.app/",
         "imageSrc": "/projectThumbnails/frontend/SakuraDBss.png"
       },
       {
@@ -30,6 +31,7 @@
         "name": "Evento",
         "desc": "Event Tracking React app using Context API",
         "techs": ["React", "Context API"],
+        "url": "https://calenderapp-peach.vercel.app/",
         "imageSrc": "/projectThumbnails/frontend/CalendarApp.png"
       },
       {
@@ -37,7 +39,7 @@
         "name": "WeThinkElastic",
         "desc": "Landing Page",
         "techs": ["HTML&CSS", "JS", "GSAP", "ScrollTrigger"],
-        "url": "",
+        "url": "https://we-think-elastic-homepage-project.vercel.app/",
         "imageSrc": "/projectThumbnails/frontend/WeThinkElasticSS.png"
       }
     ]
@@ -49,7 +51,7 @@
         "id": 5161,
         "name": "Code Hours",
         "desc": "Get Tracked  Stay Cracked",
-        "url": "https://uncommon-studio.vercel.app/",
+        "url": "https://www.codehours.site/",
         "imageSrc": "/projectThumbnails/fullstack/codehours.png",
         "secondaryImages": [
           "/projectThumbnails/fullstack/secondaryImages/codehours2.png",
@@ -97,7 +99,7 @@
           "Email Verification",
           "Redux"
         ],
-        "url": "",
+        "url": "https://www.cloakcampus.space/",
         "imageSrc": "/projectThumbnails/fullstack/cloakcampus.png",
         "secondaryImages": [
           "/projectThumbnails/fullstack/secondaryImages/cloakcampus2.png",
@@ -135,7 +137,7 @@
           "CLERK Auth",
           "Context API"
         ],
-        "url": "",
+        "url": "https://www.yomimori.space/",
         "imageSrc": "/projectThumbnails/fullstack/yomimori.png",
         "secondaryImages": [
           "/projectThumbnails/fullstack/secondaryImages/yomimori2.png",
@@ -163,16 +165,30 @@
         "name": "NSFW Detector",
         "desc": "A NSFW detector API (prompt engineered)",
         "techs": ["Javascript", "tensorflow", "NSFW.js", "Express"],
-        "url": "https://uncommon-studio.vercel.app/",
-        "imageSrc": "/projectThumbnails/frontend/UncommonSS.png"
+        "url": "https://github.com/Sarthak-Sama/NSFWDetectorAPI",
+        "imageSrc": "/projectThumbnails/extraProjects/nsfwdetection.png"
       },
       {
         "id": 1223,
         "name": "AtoZ Home Services",
         "desc": "A-Z Homeservice provider",
         "techs": ["Jinja", "Flask", "SQLite", "HTTM & CSS"],
-        "url": "",
-        "imageSrc": "/projectThumbnails/frontend/WeThinkElasticSS.png"
+        "url": "https://github.com/Sarthak-Sama/AtoZ-House-Service-IITM-MAD-1",
+        "imageSrc": "/projectThumbnails/extraProjects/AtoZHomeServices.png",
+        "secondaryImages": [
+          "/projectThumbnails/extraProjects/secondaryImages/AtoZHomeServices2.png"
+        ],
+        "idea": "This was Capstone project inluced in my course work at IIT-Madras under my Bachelor of Science in Data Science and Programming Degree. I got a PERFECT SCORE of 100/100 in this project.",
+        "features": [
+          "User can book services like Plumber, Electrician, Carpenter, etc.",
+          "User can also register as a service provider",
+          "Admin can see the booking and assign the service provider to the user"
+        ],
+        "challenges": [
+          "I had pushed the project to the very last minute due to some other commitments and hence had to finish this project in 2 days.",
+          "I had 2 days and thus had to learn everything about flask, jinja, sqlite in 2 days.",
+          "Due to the very tight time constraint, I had to sacrifice the UI UX of the project."
+        ]
       }
     ]
   }

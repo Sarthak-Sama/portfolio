@@ -11,7 +11,11 @@ function ProjectCard({ project, category }) {
         <Link
           to={`/projects/${project.id}`}
           className={`
-            ${category === "Frontend" ? "hidden" : "block"}
+            ${
+              category === "Frontend" || project.name === "NSFW Detector"
+                ? "hidden"
+                : "block"
+            }
           relative w-[49%]
           overflow-hidden 
           rounded-lg 
@@ -35,7 +39,11 @@ function ProjectCard({ project, category }) {
         </Link>
         <a
           className={`
-          relative ${category === "Frontend" ? "w-full" : "w-[49%]"}
+          relative ${
+            category === "Frontend" || project.name === "NSFW Detector"
+              ? "w-full"
+              : "w-[49%]"
+          }
           overflow-hidden 
           rounded-lg 
           px-6 py-1 mt-2
