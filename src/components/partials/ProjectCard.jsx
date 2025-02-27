@@ -62,6 +62,8 @@ function ProjectCard({ project, category }) {
             transition: "all 200ms ease-out",
           }}
           href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           visit
         </a>

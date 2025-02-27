@@ -15,6 +15,7 @@ import {
   useSpring,
   useTransform,
 } from "motion/react";
+import { href } from "react-router-dom";
 
 // Custom hook to detect mobile devices (adjust the breakpoint as needed)
 function useIsMobile() {
@@ -234,6 +235,7 @@ function FloatingDock({ openState, setOpenState }) {
     {
       title: "Resume",
       icon: <IconFileCvFilled className="-full w-full text-white" />,
+      href: "https://drive.google.com/file/d/1bCsAld2trNDNhF_bE9dZ1egyURgdlfjf/view?usp=sharing",
     },
   ];
 
