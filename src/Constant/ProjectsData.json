@@ -106,6 +106,7 @@
           "/projectThumbnails/fullstack/secondaryImages/cloakcampus3.png"
         ],
         "features": [
+          "Use email: 'user@sampleUniversity.ac.in' and password: 'User_56_' to login as a dummy student at a dummy university.",
           "Completly Anonymouse Social media for university students where they can interact with their peers and express their critical opinions without any fear of being judged.",
           "Username and Profile pictures gets randomly generated and assigned to the user with each login to keep the user completly anonymous",
           "Content Moderation using GEMINI API",
