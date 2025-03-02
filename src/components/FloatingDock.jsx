@@ -102,7 +102,7 @@ function AnimatedIconContainer({ elem, mouseX, setOpenState }) {
   const isSocialMedia =
     elem &&
     elem.title &&
-    ["X", "Linkedin", "Github"].includes(String(elem.title).trim());
+    ["X", "Linkedin", "Github", "Resume"].includes(String(elem.title).trim());
 
   return (
     <>
