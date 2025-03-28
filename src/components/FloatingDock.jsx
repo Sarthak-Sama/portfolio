@@ -40,7 +40,7 @@ function MobileIconContainer({ elem, setOpenState }) {
     <>
       {elem &&
       elem.title &&
-      ["X", "Linkedin", "Github"].includes(String(elem.title).trim()) ? (
+      ["X", "Linkedin", "Github", "Resume"].includes(String(elem.title).trim()) ? (
         <a
           href={elem.href}
           target="_blank"
