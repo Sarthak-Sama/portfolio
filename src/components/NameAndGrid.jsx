@@ -45,10 +45,10 @@ function NameAndGrid({ openState }) {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
-        className="mt-[200vh]"
+        className="mt-[200vh] sm:mt-[175vh] relative"
       >
-        <div className="black-scrollbar relative grid grid-cols-2 sm:grid-cols-3 gap-6 text-left w-[90%] h-[70%] overflow-y-auto mx-auto sm:w-full sm:h-full mt-[20vh]">
-          <div className="absolute left-1/2 -translate-x-1/2 top-[75%] -translate-y-1/2 w-[70vw] h-[50vw] rounded-full bg-black z-[0] blur-[20rem]" />
+        <div className="absolute left-1/2 -translate-x-1/2 top-[75%] -translate-y-[50%] w-[55vw] h-[55vw] rounded-full bg-black z-[0] blur-[100rem]" />
+        <div className="black-scrollbar relative grid grid-cols-2 sm:grid-cols-3 gap-6 text-left w-[90%] h-[70%] sm:w-full sm:h-full mt-[20vh] p-5 overflow-y-scroll overflow-x-hidden">
           {Object.entries(skills).map(([category, skillList]) => (
             <div
               key={category}

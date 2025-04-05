@@ -128,9 +128,11 @@ const Card = ({
       style={{
         perspective: "1000px",
         zIndex: computedZIndex,
-        // On desktop, use the motion value; on mobile, let animate control x.
         ...(!isMobile && { x: cardXCor }),
         opacity: !isMobile || visibleSide !== "front" ? 1 : opacityTransform,
+        willChange: "transform, opacity",
+        transform: "translate3d(0, 0, 0)",
+        WebkitFontSmoothing: "antialiased",
       }}
       // Enable horizontal drag only on mobile and when front side is visible
       drag={!isMobile || visibleSide !== "front" ? false : "x"}
