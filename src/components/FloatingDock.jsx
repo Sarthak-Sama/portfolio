@@ -40,7 +40,9 @@ function MobileIconContainer({ elem, setOpenState }) {
     <>
       {elem &&
       elem.title &&
-      ["X", "Linkedin", "Github", "Resume"].includes(String(elem.title).trim()) ? (
+      ["X", "Linkedin", "Github", "Resume"].includes(
+        String(elem.title).trim()
+      ) ? (
         <a
           href={elem.href}
           target="_blank"
@@ -235,7 +237,7 @@ function FloatingDock({ openState, setOpenState }) {
     {
       title: "Resume",
       icon: <IconFileCvFilled className="-full w-full text-white" />,
-      href: "https://drive.google.com/file/d/1bCsAld2trNDNhF_bE9dZ1egyURgdlfjf/view?usp=sharing",
+      href: "https://drive.google.com/file/d/1l8qT6fLkKeh93LYqYkf555RZniiG83RC/view",
     },
   ];
 
